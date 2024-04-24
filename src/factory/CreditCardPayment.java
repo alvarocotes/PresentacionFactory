@@ -1,4 +1,8 @@
-public class CreditCardPayment implements PaymentMethod{
+package factory;
+
+import factory.PaymentMethod;
+
+public class CreditCardPayment implements PaymentMethod {
 
     @Override
     public void pay() {
