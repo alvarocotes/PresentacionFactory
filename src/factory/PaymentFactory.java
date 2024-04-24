@@ -12,5 +12,6 @@ public class PaymentFactory {
                 // mas formas de pago
             throw new IllegalArgumentException("Tipo de pago no válido.");
         }
+
     }
 }
