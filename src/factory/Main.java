@@ -9,11 +9,13 @@ public class Main {
     public static void main(String[] args) {
         PaymentFactory factory = new PaymentFactory();
 
-        PaymentMethod cashPayment = factory.createPayment("cash");
-        cashPayment.pay(); // Imprime: "Pago en efectivo realizado."
+        PaymentMethod cashPayment = factory.createPayment("cash"); //usando el metodo createPayment de la
+                                                                            //de la fabrica vamos a guardar en la variable la instancia
+                                                                            // del metodo de pago
+        cashPayment.pay(); // llamamos el metodo pago del metodo de pago
 
         PaymentMethod creditCardPayment = factory.createPayment("credit");
-        creditCardPayment.pay(); // Imprime: "Pago con tarjeta de crédito realizado."
+        creditCardPayment.pay();
 
 
 
